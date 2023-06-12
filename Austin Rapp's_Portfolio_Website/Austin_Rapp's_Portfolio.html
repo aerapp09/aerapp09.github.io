@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Austin Rapp</title>
+        <link rel="stylesheet" type="text/css" href="final_website_css.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Github">Github</a>
+            <a href="#Upcoming Projects">Upcoming Projects</a>
+            <!--Onclick and ondblclick functions added to open and close hthe contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="typing_vid.mp4" type="video/mp4">
+                <!--Display message if video fails to run -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Austin Rapp's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Logic will get you from A to B,
+                        <br>imagination will take you everywhere.
+                    </q>
+                    <br>-Albert Einstein
+                    <br>
+                    <br>My name is Austin. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--Slideshow section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/office3.png" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!--Slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_Javascript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I'm am a data scientist,<br> trained in:<br>HTML, CSS, Javascript, SQL, and Python</div>
+                    </div>
+                    <!--Slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!--Slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt=".Net logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+                    <!--Slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database(1).jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL</div>
+                    </div>
+                    <!--Slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/working_photo3.jpg" alt="Picture of choice">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!--Prev and next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br><!--Adds a space between the slideshow images and the dots-->
+
+                <!--slideshow dots (tehse are another way for users to nav through slideshow)-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/working_photo.jpg" alt="Working away">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! I am  interested. As a husband and dog owner, I enjoy time with my family.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br> I am a data science developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="Github">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p>
+                    You can view my coding project on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/aerapp09" target="_blank">Austin Rapp's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/aerapp09" target="_blank"><img src="images/GitHub.png"></a>
+            </div>
+        </div>
+
+        <!--Upcoming Projects-->
+        <div class="background" id="Upcoming Projects">
+            <!--Full Page rather than columns-->
+            <br><br><br><br>
+            <div class="Stat_Page">
+                <h1> Upcoming Projects</h1>
+                <div class="stat_container">
+                    <h1>Define Goal</h1>
+                    
+                    <div class="Stat_text">
+                        <p>
+                                Goal(noun): the end toward which effort is directed : AIM.<br>
+                                Ex: "The goal is high-speed rail travel."<br><br>
+                              <br><br>
+                                I am learning online through classes in Pluralsight and using what I learned to find
+                                relationships in data. Sorry that this has no context! I'm working on finding a good project to present.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="stat_container">
+                    <h1>My Goal</h1>
+                    
+                    <div class="Stat_text">
+                        <p>
+                            Build something that pushes people to communicate the things they want to say.I want to learn the modern tools of analysis to come up with ways to find
+                            the relationship people have to eachother and their environment.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="stat_container">
+                    <h1">Graph I made in Jupyter:</h1>
+
+                    <div class="Stat_img">
+                        <img class = "Stat_img" src="images/my_plot.png" alt="Graphy daphy Missing">
+                    </div>
+                    
+                </div>
+                
+                <!--Second page for light box container-->
+                
+                <!-------------Begin Lightbox-------------->
+                <div class="stat_container2">
+                <h1 style="text-align:left">Iris Data Visualizations</h1>
+                    <div class="row" style="padding-bottom: 300px;">
+                        <h2 style="padding-bottom: 50px">Try Clicking on One of These Boxes:</h2>
+                        <div class="column_3">
+                            <img src = "images/my_plot2.png" style = "width:100%; margin-bottom: -4px;" onclick="openModal();currentSlide2(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column_3">
+                            <img src = "images/my_plot3.png" style = 'width:100%; margin-bottom: -4px;' onclick="openModal();currentSlide2(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column_3">
+                            <img src = "images/my_plot4.png" style = 'width:100%; margin-bottom: -4px;' onclick="openModal();currentSlide2(3)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column_3">
+                            <img src = "images/my_plot5.png" style = 'width:100%; margin-bottom: -4px;' onclick="openModal();currentSlide2(4)" class="hover-shadow cursor">
+                        </div>
+                    </div>
+            
+                    <!--Modal/lightbox(I made mySlides_1 because it does not display otherwise)-->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal_content">
+            
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/my_plot2.png" style="width:50%; margin-bottom: -4px;">
+                            </div>
+            
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/my_plot3.png" style="width:100%; margin-bottom: -4px;">
+                            </div>
+            
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/my_plot4.png" style="width:100%; margin-bottom: -4px;">
+                            </div>
+            
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="images/my_plot5.png" style="width:100%; margin-bottom: -4px;">
+                            </div>
+            
+                            <!--Next/previous controls -->
+                            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            
+                            <!--Caption text-->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+            
+                            <!--Thumbnail image controls-->
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot2.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(1)" alt="Stat1">
+                            </div>
+            
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot3.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(2)" alt="Stat2">
+                            </div>
+            
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot4.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(3)" alt="Stat3">
+                            </div>
+            
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot5.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(4)" alt="Stat4">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--End Lightbox-->
+                    
+                    <div class="Stat_text" style="padding-bottom: 50px;">
+                        <h1 style= color:white> Violin Graph</h1>
+                        <p>Here is something I found interesting</p>
+                    </div>
+                    <div class="Stat_img">
+                        <img class = "Stat_img"  src="images/my_plot6.png" alt="Graphy daphy Missing">
+                    </div>
+                    
+                    <h2 style= color:white> Here is a Shiny project coded in R:</h2>
+                    <iframe height="400" width="100%" frameborder="no" src="https://2r6tf0-austin-rapp.shinyapps.io/iris-app/"> </iframe>
+
+                </div>
+                  
+                        
+            </div>
+                            <!--Stat project ideas-->
+                <div class="Row" id="Stat_Page">
+                    <!--Left column-->
+                    <div class="Column_1">
+                        <h1>Project Ideas </h1>
+                        <p>
+                            Pictures that Hollywood greenlights
+                            <br>
+                            Data from the Manhattan Project
+                            <br>
+                            <p class="center"><a href="https://github.com/aerapp09" target="_blank">Projects Github</a></p>
+                        </p>
+                    </div>
+                    <!--Right column-->
+                    <div class="Column_2">
+                        <a href="https://github.com/aerapp09" target="_blank"><img src="images/Python.png"></a>
+                    </div>
+                </div>
+            
+        </div>
+        
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <!--Here we use a freeonline service to send our contact form to an email address of our choosing
+                    it will not run unless live on the internest so it has to be push online website first-->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="phone"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="phone"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+                    
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Find me on Linkedin! <a href="https://www.linkedin.com/in/austin-rapp-7717a989" target="_blank">Austin Rapp's Linkedin</a></p>
+                <br>
+            </p>
+        </footer>
+        <script src="JS/final_website.js"></script>
+    </body>
+</html>
